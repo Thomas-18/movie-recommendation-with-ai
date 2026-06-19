@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Movie Recommender</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="hero">
+    <div class="overlay">
+
+        <h1>🎬 AI Movie Recommender</h1>
+
+        <p class="tagline">
+            Discover your next favorite movie with AI
+        </p>
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="genre"
+                placeholder="Genre (Sci-Fi, Action, Horror...)"
+            >
+
+            <input
+                type="text"
+                id="mood"
+                placeholder="Mood (Happy, Sad, Exciting...)"
+            >
+
+            <button onclick="recommend()">
+                Get Recommendations
+            </button>
+
+        </div>
+
+    </div>
+</div>
+
+<div class="recommendation-section">
+
+    <h2>Recommended Movies</h2>
+
+    <div id="loading" class="hidden">
+        <div class="spinner"></div>
+        <p>Finding great movies...</p>
+    </div>
+
+    <div id="result"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
